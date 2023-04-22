@@ -19,13 +19,23 @@
                             'normal': '3px 3px 0 0 #282825',
                             'hover': '6px 6px 0 0 #282825',
                         }
+
                     }
                 }
             }
         </script>
 
         <style>
+            .transition-shadow {
+                transition: box-shadow 250ms cubic-bezier(.645, .045, .355, 1), transform 250ms cubic-bezier(.645, .045, .355, 1)
+            }
 
+            a:active,
+            a:hover,
+            a {
+                outline: 0 !important;
+                text-decoration: none;
+            }
         </style>
     </head>
 
@@ -41,7 +51,10 @@
                     tasks, I am here to
                     help
                 </p>
-                <a href="#" class="bg-[#f7cb45] px-4 py-2 rounded-full boxShadow-normal">Learn More</a>
+                <a href="#"
+                    class="h-[54px] px-[32px] leading-[54px] rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px]	inline-block transition-shadow">Learn
+                    More</a>
+
             </div>
             <div>
                 <img src="" alt="">
