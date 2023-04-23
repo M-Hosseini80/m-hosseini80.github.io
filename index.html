@@ -13,7 +13,7 @@
                     extend: {
                         colors: {
                             black: '#282825',
-                            gray: '#52514e'
+                            gray: '#52514e',
                         },
                         boxShadow: {
                             'normal': '3px 3px 0 0 #282825',
@@ -26,8 +26,32 @@
         </script>
 
         <style>
-            .transition-shadow {
-                transition: box-shadow 250ms cubic-bezier(.645, .045, .355, 1), transform 250ms cubic-bezier(.645, .045, .355, 1)
+            @font-face {
+                font-family: exo;
+                font-style: normal;
+                font-weight: 100;
+                src: url('fonts/static/Exo2-Light.ttf')
+            }
+
+            @font-face {
+                font-family: exo;
+                font-style: normal;
+                font-weight: 400;
+                src: url('fonts/static/Exo2-Regular.ttf')
+            }
+
+            @font-face {
+                font-family: exo;
+                font-style: normal;
+                font-weight: 700;
+                src: url('fonts/static/Exo2-Bold.ttf')
+            }
+
+            @font-face {
+                font-family: exo;
+                font-style: normal;
+                font-weight: 900;
+                src: url('fonts/static/Exo2-Black.ttf')
             }
 
             a:active,
@@ -36,28 +60,86 @@
                 outline: 0 !important;
                 text-decoration: none;
             }
+
+            * {
+                font-family: exo;
+            }
         </style>
     </head>
 
-    <body class="min-h-screen bg-[#f9f5f2]">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 min-h-screen items-center">
-            <div class="lg:col-span-2">
-                <h2 class="text-gray text-2xl">Hi, my name is Seyed.</h2>
-                <h1 class="text-black text-7xl font-bold">
-                    Frontend Web Developer.
+    <body class="min-h-screen bg-[#f9f5f2] text-black 	">
+        <div class="max-w-7xl mx-auto  p-5 grid grid-cols-1 lg:grid-cols-3  min-h-screen items-center gap-8">
+            <div class="lg:col-span-2 space-y-8">
+                <svg class="text-gray w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                </svg>
+
+                <h2 class="text-gray text-2xl">HI THERE! I'M</h2>
+                <h1 class="text-7xl font-black">
+                    SEYED HOSSEINI
                 </h1>
                 <p class="text-gray text-2xl ">
-                    Whether you are looking for a complete website redesign or need assistance with specific front-end
-                    tasks, I am here to
-                    help
+                    A Front-End Web Developer passionate about creating interactive
+                    applications and experiences on the web.
                 </p>
-                <a href="#"
-                    class="h-[54px] px-[32px] leading-[54px] rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px]	inline-block transition-shadow">Learn
-                    More</a>
+                <div class="flex items-center gap-4 ">
+                    <a href="#"
+                        class="h-[40px] px-[32px] inline-flex items-center justify-center rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px] bg-yellow-400 transition font-bold">Learn
+                        More</a>
+                    <div class="flex gap-2 items-center">
+                        <a class="w-10 h-10 rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px]  p-2 transition"
+                            href="https://github.com/M-Hosseini80">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="github">
+                                <path
+                                    d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057 1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 2.125.513.562.822 1.279.822 2.156 0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px]  p-2 transition"
+                            href="https://twitter.com/M_Hosseini80">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter">
+                                <path fill="#03A9F4"
+                                    d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px]  p-2 transition"
+                            href="https://www.linkedin.com/in/m-hosseini80/">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="linkedin">
+                                <g fill="#1976D2">
+                                    <path
+                                        d="M0 5h3.578v11H0zM13.324 5.129c-.038-.012-.074-.025-.114-.036a2.32 2.32 0 0 0-.145-.028A3.207 3.207 0 0 0 12.423 5c-2.086 0-3.409 1.517-3.845 2.103V5H5v11h3.578v-6s2.704-3.766 3.845-1v7H16V8.577a3.568 3.568 0 0 0-2.676-3.448z">
+                                    </path>
+                                    <circle cx="1.75" cy="1.75" r="1.75"></circle>
+                                </g>
+                            </svg>
+                        </a>
+                        <a class="w-10 h-10 rounded-full shadow-normal hover:shadow-hover border border-black hover:translate-y-[-4px] hover:translate-x-[-4px]  p-2 transition"
+                            href="https://www.youtube.com/c/M_Hosseini80?sub_confirmation=1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="youtube">
+                                <g fill-rule="evenodd" clip-rule="evenodd">
+                                    <path fill="#F44336"
+                                        d="M15.32 4.06c-.434-.772-.905-.914-1.864-.968C12.498 3.027 10.089 3 8.002 3c-2.091 0-4.501.027-5.458.091-.957.055-1.429.196-1.867.969C.23 4.831 0 6.159 0 8.497v.008c0 2.328.23 3.666.677 4.429.438.772.909.912 1.866.977.958.056 3.368.089 5.459.089 2.087 0 4.496-.033 5.455-.088.959-.065 1.43-.205 1.864-.977.451-.763.679-2.101.679-4.429v-.008c0-2.339-.228-3.667-.68-4.438z">
+                                    </path>
+                                    <path fill="#FAFAFA" d="M6 11.5v-6l5 3z"></path>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
 
             </div>
+            <img src="images/seyed mohamad hossein hossein.png" alt="" class="max-w-sm mx-auto">
+        </div>
+
+        <div class="max-w-7xl mx-auto  p-5">
+            <h2 class="text-center font-bold text-7xl">What I do</h2>
             <div>
-                <img src="" alt="">
+                <div>
+                    <h2></h2>
+                </div>
             </div>
         </div>
 
